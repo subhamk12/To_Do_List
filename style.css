@@ -1,0 +1,116 @@
+:root{
+    --bg-color: #191825;
+    --text-color: #865DFF;
+    --success-color: #E384FF;
+    --error-color: #FFA3FD;
+}
+
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-family: Poppins !important;
+    user-select: none;
+}
+
+ul {
+    list-style-type:none;
+}
+body {
+    background-color: var(--bg-color);
+    height:100vh;
+    width:60%;
+    min-width: 600px;
+    margin:30px auto;
+}
+.heading {
+    font-size:45px;
+    font-weight: 500;
+    color: #FFEAEA;
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 50px;
+}
+.content, .todo-list {
+    text-align:center;
+    margin:50px;
+}
+input {
+    height:50px;
+    width:60%;
+    border:none;
+    font-size:17px;
+    vertical-align: middle;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-weight: 300;
+    color: var(--text-color);
+}
+select {
+    width:20%;
+    height:50px;
+    border:none;
+    vertical-align: middle;
+    display: inline-block;
+    font-size:20px;
+    font-weight:300;
+    padding-left:8px;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+form {
+    margin:50px auto 35px;
+}
+
+.task li {
+    width:70%;
+    min-width: 200px;
+    height:40px;
+    border:none;
+    background-color: white!important;
+    margin-top:5px;
+    margin-bottom:5px;
+    display:inline-block;
+    font-size:18px;
+    font-weight: 600;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: left;
+    padding-left:20px;
+    padding-top:10px;
+    margin-left:0;
+    margin-right:0;
+    color: var(--text-color);
+}
+.task button {
+    height:50px;
+    font-size:26px;
+    width:50px;
+    display: inline-block;
+    margin-right:0px;
+    margin-left:0;
+    background-color: var(--success-color);
+    color:white;
+    vertical-align: middle;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tick {
+    background-color: var(--error-color) !important;
+    color:white;
+    font-weight: bold;
+}
+
+.delete img{
+    margin-top: 9px;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+.completed {
+    text-decoration:line-through 3px black;
+    font-style: italic;
+}
